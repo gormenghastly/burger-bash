@@ -1,0 +1,50 @@
+body {
+  background-color: peru;
+}
+
+.jumbotron {
+  background: url('../img/veg-burg-2.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+#veggie {
+  color: green;
+  font-family: Rock Salt, cursive;
+  font-size: 3em;
+}
+
+.burger {
+  color: rgb(68, 17, 68);
+  font-family: Fredoka One, cursive;
+  font-size: 5em;
+}
+
+#order {
+  background: lightgrey;
+  color: rgb(68, 17, 68);
+  font-family: Fredoka One, cursive;
+  padding-top: 1em;
+}
+
+.btn {
+  background: green;
+}
+
+.menu {
+  background: lightgrey;
+  margin-top: 1em;
+}
+
+.eaten {
+  color: green;
+  font-family: Rock Salt, cursive;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.burgers {
+  color: black;
+  font-family: Fredoka One, cursive;
+  font-size: 1.5em;
+}
