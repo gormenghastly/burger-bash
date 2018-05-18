@@ -10,25 +10,26 @@ body {
 
 #veggie {
   color: green;
-  font-family: Rock Salt, cursive;
+  font-family: 'Rock Salt', cursive;
   font-size: 3em;
 }
 
 .burger {
   color: rgb(68, 17, 68);
-  font-family: Fredoka One, cursive;
+  font-family: 'Fredoka One', cursive;
   font-size: 5em;
 }
 
 #order {
   background: lightgrey;
   color: rgb(68, 17, 68);
-  font-family: Fredoka One, cursive;
+  font-family: 'Fredoka One', cursive;
   padding-top: 1em;
 }
 
 .btn {
   background: green;
+  color: white;
 }
 
 .menu {
@@ -36,15 +37,20 @@ body {
   margin-top: 1em;
 }
 
-.eaten {
+.subtitle {
   color: green;
-  font-family: Rock Salt, cursive;
+  font-family: 'Rock Salt', cursive;
   font-size: 2em;
   margin-top: 1em;
 }
 
 .burgers {
   color: black;
-  font-family: Fredoka One, cursive;
+  font-family: 'Fredoka One', cursive;
   font-size: 1.5em;
+}
+
+#devour {
+  background: rgb(68, 17, 68);
+  font-family: 'Rock Salt', cursive;
 }

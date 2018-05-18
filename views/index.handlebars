@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 id='veggie'>VEGGIE</h1>
+        <h1 class='burger'>BURGER</h1>
+        <h1 class="burger">BASH</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card" id="order">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <h2 id="request-title">MAKE A REQUEST</h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="request" placeholder="and create some deliciousness!">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <button type="submit" class="btn" id="place-order">PLACE YOUR ORDER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card text-center menu">
+                <div class="card-title">
+                    <h2 class="subtitle">ON THE MENU</h2>
+                </div>
+                <div class="card-body burgers" id="menu">
+                    {{#each burgers}} {{#unless this.devoured}}
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <p class="unEaten">{{this.id}}. {{this.burger_name}}
+                            <input type="hidden" name="devoured" value="1">
+                            <button class="btn" id="devour" type="submit">DEVOUR IT!</button>
+                        </p>
+                    </form>
+                    {{/unless}} {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-center menu">
+                <div class="card-title">
+                    <h2 class="subtitle">DEVOURED</h2>
+                </div>
+                <div class="card-body burgers" id="devoured">
+                    {{#each burgers}} {{#if this.devoured}}
+                    <p class="eaten">{{this.id}}. {{this.burger_name}}</p>
+                    {{/if}} {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 text-center">
-                            <button type="submit" class="btn btn-success">PLACE YOUR ORDER</button>
+                            <button type="submit" class="btn" id="place-order">PLACE YOUR ORDER</button>
                         </div>
                     </div>
                 </div>
@@ -43,15 +43,19 @@
             <div class="col-lg-6">
                 <div class="card text-center menu">
                     <div class="card-title">
-                        <h2 class="eaten">ON THE MENU</h2>
+                        <h2 class="subtitle">ON THE MENU</h2>
                     </div>
-                    <div class="card-body burgers" id="menu">{{burger}}</div>
+                    <div class="card-body burgers" id="menu">
+                        <p>{{BURGER}}
+                            <button class="btn" id="devour" type="submit">DEVOUR IT!</button>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="card text-center menu">
                     <div class="card-title">
-                        <h2 class="eaten">DEVOURED</h2>
+                        <h2 class="subtitle">DEVOURED</h2>
                     </div>
                     <div class="card-body burgers" id="devoured">{{burger}}</div>
                 </div>
