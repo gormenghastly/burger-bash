@@ -1,6 +1,6 @@
 # Burger Bash
 
-My version of Eat Da Burger where you can devour veggie burgers and even order your own creations! This is an MVC app that uses an ORM, Handlebars to template the HTML and MySQL to store the burgers.
+My version of Eat Da Burger where you can devour delicious veggie burgers and even order your own creations! This is an MVC app that uses an ORM, Handlebars to template the HTML and MySQL to store the burgers.
 
 ## Technologies
 
