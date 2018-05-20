@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('#place-order').on('click', function(event) {
     event.preventDefault();
     var newBurg = {
-      burger_name: $('request')
+      burger_name: $('#request')
         .val()
         .trim(),
       devoured: false
@@ -18,7 +18,7 @@ $(document).ready(function() {
   $('#devour').on('click', function(event) {
     event.preventDefault();
     var id = $(this).data('id');
-    $.ajax('api/cats/' + id, {
+    $.ajax('api/burgers/' + id, {
       type: 'PUT',
       data: devourState
     }).then(function() {
